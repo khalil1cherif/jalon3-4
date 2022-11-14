@@ -17,10 +17,10 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 import contractions
-vectoriseur_pickle=open('C:/Users/USER/Desktop/ESEO COURS/vectoriseur_file','rb')
+vectoriseur_pickle=open('./vectoriseur_file','rb')
 vectoriseur=load(vectoriseur_pickle)
 
-model_pickle=open('C:/Users/USER/Desktop/ESEO COURS/model_file','rb')
+model_pickle=open('./model_file','rb')
 model=load(model_pickle)
 
 tokenizer = RegexpTokenizer(r'\w+')
