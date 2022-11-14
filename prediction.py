@@ -139,6 +139,6 @@ def predict_topics(model, vectoriseur, n_topics, text):
                 corr_value= sorted[i]
                 result = np.where(unsorted_topics_correlations == corr_value)[0]
                 topics.append(topics1.get(result[0]))
-            print(topics)
+            return topics
         else:
             return polarity
