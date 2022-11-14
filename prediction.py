@@ -118,7 +118,7 @@ topics1={0:'les perssonels et les tables',
        12:'sandwich',
        13:'suchi',
        14:'mauvais environnement'}
-def predict_topics(model, vectorizer, n_topics, text):
+def predict_topics(model, vectoriseur, n_topics, text):
         polarity=TextBlob(text).sentiment.polarity
         print("polarity")
         if polarity<0:
@@ -127,7 +127,7 @@ def predict_topics(model, vectorizer, n_topics, text):
 
             text=[text]
 
-            vectorized=vectorizer.transform(text)
+            vectorized=vectoriseur.transform(text)
 
             topics_correlations=model.transform(vectorized)
             unsorted_topics_correlations=topics_correlations[0].copy()
