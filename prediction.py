@@ -5,6 +5,7 @@ import numpy as np
 
 from textblob import TextBlob
 import nltk
+nltk.download()
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
