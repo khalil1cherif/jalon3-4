@@ -1,9 +1,7 @@
 import pickle
 import prediction
 import streamlit as st
-from PIL import Image
 
-image = Image.open('pic.png')
 
 model= pickle.load(open('model_file.pkl', 'rb'))
 vectorizer= pickle.load(open('vectoriseur_file.vec', 'rb'))
