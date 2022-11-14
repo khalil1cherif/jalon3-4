@@ -1,6 +1,7 @@
 import pickle
 import prediction
 import streamlit as st
+from pickle import load
 
 vectoriseur_pickle=open('./vectoriseur_file','rb')
 vectoriseur=load(vectoriseur_pickle)
