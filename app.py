@@ -2,7 +2,11 @@ import pickle
 import prediction
 import streamlit as st
 
+vectoriseur_pickle=open('./vectoriseur_file','rb')
+vectoriseur=load(vectoriseur_pickle)
 
+model_pickle=open('./model_file','rb')
+model=load(model_pickle)
 
 
 # Add a title and intro text
