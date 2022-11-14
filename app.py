@@ -26,7 +26,7 @@ with st.form("my_form"):
       if len(text) < 5:
          st.error("Invalid text: At least 4 characters")
       else:
-         pre=prediction.predict_topics(model, vectorizer,number,text)
+         pre=prediction.predict_topics(model, vectoriseur,number,text)
          if not pre[1]:
             st.info("Polarity score: "+ str(pre[0]))
          else:
