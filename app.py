@@ -3,8 +3,6 @@ import prediction
 import streamlit as st
 
 
-model= pickle.load(open('./model_file.pkl', 'rb'))
-vectorizer= pickle.load(open('./vectoriseur_file.vec', 'rb'))
 
 
 # Add a title and intro text
