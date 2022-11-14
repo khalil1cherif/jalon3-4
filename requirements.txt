@@ -1,0 +1,6 @@
+textblob==0.17.1
+numpy==1.23.4
+nltk==3.2.4
+contractions==0.1.72
+spacy==3.4.3
+scikit-learn==1.1.3
