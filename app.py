@@ -13,8 +13,7 @@ st.text('This is a web app that allows Topics extraction from bad restaurant rev
 
 
 with st.form("my_form"):
-   st.image(image)
-
+   
    number = st.number_input("topics number", value=1, min_value=1, max_value=15)
    text=st.text_input("Your review", placeholder="At least 4 characters")
    # Every form must have a submit button.
